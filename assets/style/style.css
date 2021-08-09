@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+html {
+	scroll-behavior: smooth;
+	width: 100%;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+header {
+	width: 100%;
+	margin-left: -10px;
+	padding: 5px 0px 10px 30px;
+	display: flex;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	background-color: white;
+	position: sticky;
+	top: 0;
+}
+
+h1 {
+	margin: 5px 0;
+}
+
+nav li {
+	display: inline;
+	list-style-type: none;
+	margin-right: 20px;
+}
+
+header a {
+	text-decoration: none;
+	color: #189AB4;
+}
+
+nav a:hover {
+	font-weight: bold;
+}
+
+#content {
+	float: left;
+	width: 100%;
+}
+
+main {
+	padding: 10px;
+	width: 100%;
+	text-indent: 10px;
+	text-align: justify;
+}
+
+h2 {
+	text-align: center;
+	padding: 20px;
+	color: white;
+	background: rgb(5,68,94);
+	background: linear-gradient(90deg, rgba(5,68,94,1) 0%, rgba(24,154,180,1) 52%, rgba(212,241,244,1) 100%);
+	border-radius: 5px;
+}
+
+article {
+	margin-bottom: 5px;
+	width: 95%;
+}
+
+h3 {
+	padding: 20px 0;
+	color: #2E8BC0;
+}
+
+.details {
+	text-align: -webkit-center;
+}
+
+section {
+	width: 100%;
+}
+
+section p {
+	text-align: justify;
+}
+
+.slide-button {
+	text-indent: 0;
+	text-align-last: justify;
+}
+
+.featured-image {
+	margin-left: -10px;
+	border-radius: 10px;
+	width: 100%;
+}
+
+.prev, .next {
+	cursor: pointer;
+	padding: 10px;
+	color: white;
+	font-size: 25px;
+	transition: 0.3s ease;
+	border-radius: 3px;
+	background-color: #189AB4;
+	user-select: none;
+}
+
+.next {
+	right: 0;
+}
+
+.prev:hover, .next:hover {
+	background-color: white;
+	color: #189AB4;
+}
+
+.profile {
+	text-align: center;
+	color: #145DA0;
+	margin: 60px 0 0 -20px;
+	padding: 20px;
+}
+
+footer {
+	border-radius: 5px;
+	padding: 20px;
+	color: white;
+	text-align: center;
+	background: #189AB4;
+}
+
+@media screen and (max-width: 800px) {
+	#content,
+
+	header {
+		flex-direction: column;
+	}
+
+	nav ul {
+		padding: 0;
+	}
+}
